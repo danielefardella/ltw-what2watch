@@ -1,0 +1,42 @@
+body {padding-top: 65px;background: #222528;}
+a {color:#21c7e1;}
+a:hover {text-decoration:none; color:#1cc2dc;}
+.navbar-custom { background: #222528 !important; -webkit-box-shadow: 0px 6px 9px 0px rgba(0,0,0,0.5); -moz-box-shadow: 0px 6px 9px 0px rgba(0,0,0,0.5);box-shadow: 0px 6px 9px 0px rgba(0,0,0,0.5);}
+.wrap {margin:auto;width:80%; padding:30px;}
+#wrapcar {background:#161717;padding:30px;}
+.carousel-inner img {margin: auto;}
+.dropdown:hover>.dropdown-menu { display: block;}
+.fixed-top {min-height:65px;} /* When minimizing the browser the navbar minimizes to smaller resulution, in order to fix it , we fix the height of navbar to 65px */
+.slide {width:75%;}
+#carus {margin:0 auto;width:80%;display:flex;}
+#carus .textside {width:25%;padding:20px; color:#17a2b8;}
+.carousel-item{max-height: 350px; }
+
+#otherPages {background-color:gray; background:url('../images/Funny-Movies-Backgrounds.jpg') no-repeat center fixed; background-size:cover;}
+
+
+/* Login Form */
+#loginform {background-color:#ffffff; max-width:600px; margin:5% auto; padding:20px; border-radius:10px; 
+-webkit-box-shadow: 0px 6px 9px 0px rgba(0,0,0,0.5); -moz-box-shadow: 0px 6px 9px 0px rgba(0,0,0,0.5);box-shadow: 0px 6px 9px 0px rgba(0,0,0,0.5);}
+.loggedin{padding-right:10px;}
+
+/* Admin */
+#panel {background:#222528; padding:20px; border-radius:10px; margin:0 15px 15px 0;}
+.width40 {width:40%;}
+.width60{width:60%;}
+
+/* Text */
+.white {color:#ffffff};
+.red {color:red;}
+.greycol {color:#55595c;}
+.sitetextgen {color:#21c7e1;}
+
+/* Responsive Fixes */
+@media screen and (max-width: 900px) {
+    #carus { display: block; }
+    #carus .textside {width:100%;}
+    .carousel-item{max-height: 350px; width:100%; }
+    .slide {width:100%;}
+    #panel {width:100%;}
+}
+
