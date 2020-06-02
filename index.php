@@ -1,5 +1,5 @@
 import { loadState, saveState} from ''./localStorage';
-import { createStore } from 'redux';
+import { createStore } from 'redux'; // using React JS store function
 
 const persistedState = loadState();
 const store = createStore(persistedState);
