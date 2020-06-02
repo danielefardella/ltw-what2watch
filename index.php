@@ -1,3 +1,14 @@
+import { loadState, saveState} from ''./localStorage';
+import { createStore } from 'redux';
+
+const persistedState = loadState();
+const store = createStore(persistedState);
+store.subscribe(() => {
+  saveState({
+    store.getState()
+  });
+});
+
 <?php require 'dbconnect.php'; // Connection to DB 
 session_start(); // creates a session or resumes the current one based on a session identifier passed via a GET or POST request, or passed via a cookie.
 ?>
