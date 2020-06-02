@@ -20,11 +20,11 @@ if(isset($_POST['sendbutton'])) {
     $data = pg_query_params($dbconn,$query,array($title,$plot,$director,$yearr,$imdb,$postimg,$coverimg,$genres,$duration,$ytlink));
 
     if(data) {
-        $_SESSION['successpost'] = 'The trailer added successefully';
+        $_SESSION['successpost'] = 'The trailer added successfully';
         header('Location: admin.php');
     }
     else{
-        $_SESSION['notsuccesspost'] = 'The trailer not added successefully';
+        $_SESSION['notsuccesspost'] = 'The trailer not added successfully';
         header('Location: admin.php');
     }
     
