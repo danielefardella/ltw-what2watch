@@ -142,7 +142,7 @@ session_start(); // creates a session or resumes the current one based on a sess
     </div>
     <div class="form-group" style="float:right;">
     <form>
-        <select class="form-control" id="exampleFormControlSelect1" style="color:#17a2b8;background:#161717; font-size:18px; border-color:#222528;">
+        <select class="form-control" id="exampleFormControlSelect1" style="color:#17a2b8;background:#161717; font-size:18px; border-color:#222528;" onchange="sessionStorage(this.value)"> <!-- when the value of this form changes, we call a function to save the value and display it after a page refresh -->
         <option value="selectgenre" disabled selected> Select Genre </option>
         <option value="All genres">All Genres</option>
         <option value="Action">Action</option>
@@ -205,5 +205,6 @@ session_start(); // creates a session or resumes the current one based on a sess
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/alljs.js"></script>
+    <script type="text/javascript" src="js/sessionStorage"></script>
   </body>
 </html>
